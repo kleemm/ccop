@@ -6,7 +6,7 @@ TLS=${TLS:-'1'}
 ARGO_DOMAIN=${ARGO_DOMAIN:-''}
 ARGO_AUTH=${ARGO_AUTH:-''}
 WSPATH=${WSPATH:-'argo'}
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
+UUID=${UUID:-'735f8052-814e-4312-a96a-062c84bd8a3c'}
 CFIP=${CFIP:-'icook.hk'}
 
 if [ "$TLS" -eq 0 ]; then
@@ -144,7 +144,7 @@ generate_config() {
                         "dest":3001
                     },
                     {
-                        "path":"/${WSPATH}-vless",
+                        "path":"/735f8052-814e-4312-a96a-062c84bd8a3c-vless",
                         "dest":3002
                     },
                     {
@@ -199,11 +199,11 @@ generate_config() {
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/${WSPATH}-vless"
+                    "path":"/735f8052-814e-4312-a96a-062c84bd8a3c-vless"
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -227,11 +227,11 @@ generate_config() {
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/${WSPATH}-vmess"
+                    "path":"/735f8052-814e-4312-a96a-062c84bd8a3c-vmess"
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -255,11 +255,11 @@ generate_config() {
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/${WSPATH}-trojan"
+                    "path":"/735f8052-814e-4312-a96a-062c84bd8a3c-trojan"
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
@@ -284,11 +284,11 @@ generate_config() {
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/${WSPATH}-shadowsocks"
+                    "path":"/735f8052-814e-4312-a96a-062c84bd8a3c-sk"
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls",
