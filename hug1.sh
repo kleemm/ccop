@@ -6,7 +6,7 @@ TLS=${TLS:-'1'}
 ARGO_DOMAIN=${ARGO_DOMAIN:-''}
 ARGO_AUTH=${ARGO_AUTH:-''}
 WSPATH=${WSPATH:-'argo'}
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
+UUID=${UUID:-'735f8052-814e-4312-a96a-062c84bd8a3c'}
 
 if [ "$TLS" -eq 0 ]; then
   NEZHA_TLS=''
